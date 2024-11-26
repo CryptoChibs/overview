@@ -29,7 +29,7 @@ export const Overview = () => {
                 alt="Collab.Land"
                 width={200}
                 height={40}
-                className="h-8 w-auto hover:brightness-110 transition-all hidden md:block"
+                className="h-6 w-auto hover:brightness-110 transition-all hidden md:block"
                 priority
               />
               {/* Mobile logo */}
@@ -38,7 +38,7 @@ export const Overview = () => {
                 alt="Collab.Land"
                 width={32}
                 height={32}
-                className="h-9 w-auto hover:brightness-110 transition-all md:hidden"
+                className="h-7 w-auto hover:brightness-110 transition-all md:hidden"
                 priority
               />
             </Link>
@@ -154,6 +154,7 @@ export const Overview = () => {
                     { href: "https://docs.collab.land", label: "Docs" },
                     { href: "https://bit.ly/3M5lIAo", label: "Integrations" },
                     { href: "https://collabland.substack.com/", label: "Newsletter" },
+                    { href: "https://collab.land/security", label: "Security" },
                     { href: "https://collabland.freshdesk.com/support/tickets/new", label: "Support" },
                     { href: "https://medium.com/collab-land", label: "Updates" },
                     { href: "https://www.youtube.com/channel/UCmyt5i7JmBPd03r2eJ-EaMA", label: "YouTube" }
