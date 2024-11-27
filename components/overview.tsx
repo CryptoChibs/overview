@@ -3,13 +3,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
-import { Space_Mono } from 'next/font/google';
+import { Space_Mono, IBM_Plex_Sans } from "next/font/google"
 import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 const spaceMono = Space_Mono({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+});
+
+const ibmPlex = IBM_Plex_Sans({
   weight: ['400', '700'],
   subsets: ['latin'],
 });
@@ -326,43 +331,43 @@ export const Overview = () => {
 
       <main className="py-6 space-y-6 animate-fade-in mt-20 min-h-screen">
         <section className="container max-w-5xl space-y-3">
-          <h2 className="text-base sm:text-xl lg:text-2xl font-bold tracking-tight text-center text-[#FFC700] mb-4">Overview</h2>
+          <h2 className={`text-base sm:text-xl lg:text-2xl font-bold tracking-tight text-center text-[#FFC700] mb-4 ${ibmPlex.className}`}>Overview</h2>
           <div className="grid gap-3 md:grid-cols-2 max-w-4xl mx-auto">
             <div className="md:col-span-2 max-w-4xl mx-auto">
-              <p className={`mb-8 text-xs sm:text-sm text-[#8C92AC] text-center ${spaceMono.className}`}>
+              <p className={`mb-8 text-sm md:text-base text-[#F5F1E6] text-center ${spaceMono.className}`}>
                 Collab.Land burst onto the scene in May 2020, redefining how online communities connect when the world was forced to go virtual. As DAOs stepped into the spotlight as the future of collaboration, Collab.Land became the indispensable tool for managing tokenized memberships with ease. During DeFi Summer 2020, we powered investment groups; by Spring 2021, we were at the heart of the NFT explosion. Today, gaming guilds, blockchain protocols, NFT juggernauts, DeFi innovators, and DAOs worldwide rely on Collab.Land to lead the token-gated experience. We don't just adapt to Web3—Collab.Land defines what's next.
               </p>
             </div>
-            <Card className="bg-[#F5F1E6] border hover:bg-[#FFC700] transition-all duration-300 h-[180px] flex flex-col">
+            <Card className="bg-[#F5F1E6] border hover:bg-[#FFC700] transition-all duration-300 h-[280px] flex flex-col">
               <CardHeader className="pb-0 pt-4 px-4 text-center">
-                <CardTitle className="text-lg font-bold text-[#1A1A40]">How it Works</CardTitle>
+                <CardTitle className={`text-lg md:text-xl font-bold text-[#1A1A40] ${ibmPlex.className}`}>How it Works</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow overflow-auto p-3 text-center">
-                <p className={`text-[#1A1A40] text-xs ${spaceMono.className}`}>Collab.Land is read-only, accessing public blockchains to verify wallet ownership and token holdings for role or group membership. Adding a wallet requires signing a message to confirm ownership. Collab.Land does not access private data, only public wallet addresses visible to all.</p>
+                <p className={`text-sm md:text-base text-[#1A1A40] ${spaceMono.className}`}>Collab.Land is read-only, accessing public blockchains to verify wallet ownership and token holdings for role or group membership. Adding a wallet requires signing a message to confirm ownership. Collab.Land does not access private data, only public wallet addresses visible to all.</p>
               </CardContent>
             </Card>
-            <Card className="bg-[#F5F1E6] border hover:bg-[#FFC700] transition-all duration-300 h-[180px] flex flex-col">
+            <Card className="bg-[#F5F1E6] border hover:bg-[#FFC700] transition-all duration-300 h-[280px] flex flex-col">
               <CardHeader className="pb-0 pt-4 px-4 text-center">
-                <CardTitle className="text-lg font-bold text-[#1A1A40]">Key Features</CardTitle>
+                <CardTitle className={`text-lg md:text-xl font-bold text-[#1A1A40] ${ibmPlex.className}`}>Key Features</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow overflow-auto p-3 text-center">
-                <p className={`text-[#1A1A40] text-xs ${spaceMono.className}`}>Collab.Land provides token-gating to verify and manage community membership with ease. The admin portal gives leaders tools to manage the bot and resolve member issues efficiently. Additionally, a variety of miniapps are available to enrich and elevate your community's experience.</p>
+                <p className={`text-sm md:text-base text-[#1A1A40] ${spaceMono.className}`}>Collab.Land provides token-gating to verify and manage community membership with ease. The admin portal gives leaders tools to manage the bot and resolve member issues efficiently. Additionally, a variety of miniapps are available to enrich and elevate your community's experience.</p>
               </CardContent>
             </Card>
-            <Card className="bg-[#F5F1E6] border hover:bg-[#FFC700] transition-all duration-300 h-[180px] flex flex-col">
+            <Card className="bg-[#F5F1E6] border hover:bg-[#FFC700] transition-all duration-300 h-[280px] flex flex-col">
               <CardHeader className="pb-0 pt-4 px-4 text-center">
-                <CardTitle className="text-lg font-bold text-[#1A1A40]">What to Expect</CardTitle>
+                <CardTitle className={`text-lg md:text-xl font-bold text-[#1A1A40] ${ibmPlex.className}`}>What to Expect</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow overflow-auto p-3 text-center">
-                <p className={`text-[#1A1A40] text-xs ${spaceMono.className}`}>Connect your wallet with your Discord or Telegram ID and join a community of like-minded stakeholders in just a few clicks. As a member, you'll gain access to token-gated spaces where you can meet and engage with others who are interested in the project.</p>
+                <p className={`text-sm md:text-base text-[#1A1A40] ${spaceMono.className}`}>Connect your wallet with your Discord or Telegram ID and join a community of like-minded stakeholders in just a few clicks. As a member, you'll gain access to token-gated spaces where you can meet and engage with others who are interested in the project.</p>
               </CardContent>
             </Card>
-            <Card className="bg-[#F5F1E6] border hover:bg-[#FFC700] transition-all duration-300 h-[180px] flex flex-col">
+            <Card className="bg-[#F5F1E6] border hover:bg-[#FFC700] transition-all duration-300 h-[280px] flex flex-col">
               <CardHeader className="pb-0 pt-4 px-4 text-center">
-                <CardTitle className="text-lg font-bold text-[#1A1A40]">Community Impact</CardTitle>
+                <CardTitle className={`text-lg md:text-xl font-bold text-[#1A1A40] ${ibmPlex.className}`}>Community Impact</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow overflow-auto p-3 text-center">
-                <p className={`text-[#1A1A40] text-xs ${spaceMono.className}`}>Collab.Land enhances coordination within groups by streamlining access and simplifying member management, making it easier for communities to collaborate effectively. By bridging projects and token holders, we empower seamless teamwork and foster stronger, more connected communities.</p>
+                <p className={`text-sm md:text-base text-[#1A1A40] ${spaceMono.className}`}>Collab.Land enhances coordination within groups by streamlining access and simplifying member management, making it easier for communities to collaborate effectively. By bridging projects and token holders, we empower seamless teamwork and foster stronger, more connected communities.</p>
               </CardContent>
             </Card>
           </div>
@@ -370,11 +375,11 @@ export const Overview = () => {
 
         <section className="w-full bg-[#1A1A40] pt-4 pb-8 border-t-2 border-b-2 border-[#3A3A6E]">
           <div className="container max-w-5xl mx-auto">
-            <h2 className="text-base sm:text-xl lg:text-2xl font-bold tracking-tight text-center text-[#FFC700] mb-4">Identifying Collab.Land</h2>
+            <h2 className={`text-base sm:text-xl lg:text-2xl font-bold tracking-tight text-center text-[#FFC700] mb-4 ${ibmPlex.className}`}>Identifying Collab.Land</h2>
             <div className="grid gap-3 md:grid-cols-2 max-w-4xl mx-auto">
               <Card className="bg-[#F5F1E6] border hover:bg-[#FFC700] transition-all duration-300">
                 <CardHeader className="text-center">
-                  <CardTitle className="text-base sm:text-xl lg:text-2xl font-bold text-[#1A1A40]">
+                  <CardTitle className="text-lg md:text-xl font-bold text-[#1A1A40]">
                     Discord
                   </CardTitle>
                 </CardHeader>
@@ -388,12 +393,12 @@ export const Overview = () => {
                       quality={95}
                     />
                   </div>
-                  <p className={`text-[#1A1A40] text-sm ${spaceMono.className}`}>Look for the verified Collab.Land bot with a unique avatar and "BOT" tag next to its name. Make sure you're always using the verified Discord bot Collab.Land <strong>#6372</strong> and with developer-mode activated, you can also validate the Collab.Land Bot Discord UserID: <strong>704521096837464076</strong></p>
+                  <p className={`text-sm md:text-base text-[#1A1A40] ${spaceMono.className}`}>Look for the verified Collab.Land bot with a unique avatar and "BOT" tag next to its name. Make sure you're always using the verified Discord bot Collab.Land <strong>#6372</strong> and with developer-mode activated, you can also validate the Collab.Land Bot Discord UserID: <strong>704521096837464076</strong></p>
                 </CardContent>
               </Card>
               <Card className="bg-[#F5F1E6] border hover:bg-[#FFC700] transition-all duration-300">
                 <CardHeader className="text-center">
-                  <CardTitle className="text-base sm:text-xl lg:text-2xl font-bold text-[#1A1A40]">
+                  <CardTitle className="text-lg md:text-xl font-bold text-[#1A1A40]">
                     Telegram
                   </CardTitle>
                 </CardHeader>
@@ -407,7 +412,7 @@ export const Overview = () => {
                       quality={95}
                     />
                   </div>
-                  <p className={`text-[#1A1A40] text-sm ${spaceMono.className}`}>To identify the real Collab.Land bot on Telegram, ensure the username is ONLY <strong>@collablandbot</strong> as shown in the image.</p>
+                  <p className={`text-sm md:text-base text-[#1A1A40] ${spaceMono.className}`}>To identify the real Collab.Land bot on Telegram, ensure the username is ONLY <strong>@collablandbot</strong> as shown in the image.</p>
                 </CardContent>
               </Card>
             </div>
@@ -424,8 +429,8 @@ export const Overview = () => {
                     <CardTitle className="text-lg md:text-xl font-bold text-[#1A1A40]"></CardTitle>
                   </CardHeader>
                   <CardContent className="text-center pt-2 px-4">
-                    <p className={`text-[#1A1A40] text-sm ${spaceMono.className}`}>The $COLLAB token, launched in February 2023 as a free retroactive distribution to Collab.Land members and communities, embodies the spirit of community-led development. Issued by the Collab.Land Coop, $COLLAB serves as a governance token, giving users a role in shaping the platform's future. It reinforces our belief that the future of Web3 is built by the communities it serves.</p>
-                    <p className={`text-[#1A1A40] text-sm ${spaceMono.className} mt-2`}>Learn more <a href="https://us02web.zoom.us/j/5104993778?pwd=ek5nTFc5ZmJsUUdNRXNyeFFRWHRxZz09" className="text-[#8C92AC] hover:underline hover:text-[#1A1A40] transition-colors duration-300" target="_blank" rel="noopener noreferrer">here</a>.</p>
+                    <p className={`text-sm md:text-base text-[#1A1A40] ${spaceMono.className}`}>The $COLLAB token, launched in February 2023 as a free retroactive distribution to Collab.Land members and communities, embodies the spirit of community-led development. Issued by the Collab.Land Coop, $COLLAB serves as a governance token, giving users a role in shaping the platform's future. It reinforces our belief that the future of Web3 is built by the communities it serves.</p>
+                    <p className={`text-sm md:text-base text-[#1A1A40] ${spaceMono.className} mt-2`}>Learn more <a href="https://us02web.zoom.us/j/5104993778?pwd=ek5nTFc5ZmJsUUdNRXNyeFFRWHRxZz09" className="text-[#8C92AC] hover:underline hover:text-[#1A1A40] transition-colors duration-300" target="_blank" rel="noopener noreferrer">here</a>.</p>
                   </CardContent>
                 </Card>
               </div>
