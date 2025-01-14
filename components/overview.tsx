@@ -93,7 +93,7 @@ export const Overview = () => {
                   {[
                     { href: "https://collab.land/overview", label: "Overview" },
                     { href: "https://collab.land/team", label: "Team" },
-                    { href: "https://docs.collab.land/dao/token/token_overview", label: "$COLLAB" }
+                    { href: "https://docs.collab.land/help-docs/key-features/token/", label: "$COLLAB" }
                   ].map((item) => (
                     <Link 
                       key={item.href}
@@ -430,7 +430,7 @@ export const Overview = () => {
                   </CardHeader>
                   <CardContent className="text-center pt-2 px-4">
                     <p className={`text-sm md:text-base text-[#1A1A40] ${spaceMono.className}`}>The $COLLAB token, launched in February 2023 as a free retroactive distribution to Collab.Land members and communities, embodies the spirit of community-led development. Issued by the Collab.Land Coop, $COLLAB serves as a governance token, giving users a role in shaping the platform's future. It reinforces our belief that the future of Web3 is built by the communities it serves.</p>
-                    <p className={`text-sm md:text-base text-[#1A1A40] ${spaceMono.className} mt-2`}>Learn more <a href="https://us02web.zoom.us/j/5104993778?pwd=ek5nTFc5ZmJsUUdNRXNyeFFRWHRxZz09" className="text-[#8C92AC] hover:underline hover:text-[#1A1A40] transition-colors duration-300" target="_blank" rel="noopener noreferrer">here</a>.</p>
+                    <p className={`text-sm md:text-base text-[#1A1A40] ${spaceMono.className} mt-2`}>Learn more <a href="https://docs.collab.land/help-docs/key-features/token/" className="text-[#8C92AC] hover:underline hover:text-[#1A1A40] transition-colors duration-300" target="_blank" rel="noopener noreferrer">here</a>.</p>
                   </CardContent>
                 </Card>
               </div>
