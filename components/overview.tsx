@@ -451,7 +451,7 @@ export const Overview = () => {
 
       <main className="py-6 space-y-6 animate-fade-in mt-20 min-h-screen">
         <section className="container max-w-5xl space-y-3">
-          <h2 className={`text-base sm:text-xl lg:text-2xl font-bold tracking-tight text-center text-[#FFC700] mb-4 ${ibmPlex.className}`}>Overview</h2>
+          <h2 className={`text-xl md:text-2xl lg:text-3xl font-bold tracking-tight text-center text-[#FFC700] mb-4 ${ibmPlex.className}`}>Overview</h2>
           <div className="grid gap-3 md:grid-cols-2 max-w-4xl mx-auto">
             <div className="md:col-span-2 max-w-4xl mx-auto">
               <p className={`mb-8 text-sm md:text-base text-[#F5F1E6] text-center ${spaceMono.className}`}>
@@ -495,7 +495,7 @@ export const Overview = () => {
 
         <section className="w-full bg-[#1A1A40] pt-4 pb-8 border-t-2 border-b-2 border-[#3A3A6E]">
           <div className="container max-w-5xl mx-auto">
-            <h2 className={`text-base sm:text-xl lg:text-2xl font-bold tracking-tight text-center text-[#FFC700] mb-4 ${ibmPlex.className}`}>Identifying Collab.Land</h2>
+            <h2 className={`text-xl md:text-2xl lg:text-3xl font-bold tracking-tight text-center text-[#FFC700] mb-4 ${ibmPlex.className}`}>Identifying Collab.Land</h2>
             <div className="grid gap-3 md:grid-cols-2 max-w-4xl mx-auto">
               <Card className="bg-[#F5F1E6] border hover:bg-[#FFC700] transition-all duration-300">
                 <CardHeader className="text-center">
@@ -541,7 +541,7 @@ export const Overview = () => {
 
         <section className="w-full bg-[#1A1A40] pt-2 pb-8 px-6">
           <div className="container max-w-5xl mx-auto">
-            <h2 className="text-base sm:text-xl lg:text-2xl font-bold tracking-tight text-center text-[#FFC700] mb-4">$COLLAB</h2>
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold tracking-tight text-center text-[#FFC700] mb-4">$COLLAB</h2>
             <div className="grid gap-3 md:grid-cols-2 max-w-4xl mx-auto">
               <div className="col-span-2 max-w-2xl mx-auto">
                 <Card className="bg-[#F5F1E6] border hover:bg-[#FFC700] transition-all duration-300">
