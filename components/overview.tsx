@@ -550,7 +550,7 @@ export const Overview = () => {
                   </CardHeader>
                   <CardContent className="text-center pt-2 px-4">
                     <p className={`text-sm md:text-base text-[#1A1A40] ${spaceMono.className}`}>The $COLLAB token, launched in February 2023 as a free retroactive distribution to Collab.Land members and communities, embodies the spirit of community-led development. Issued by the Collab.Land Coop, $COLLAB serves as a governance token, giving users a role in shaping the platform's future. It reinforces our belief that the future of Web3 is built by the communities it serves.</p>
-                    <p className={`text-sm md:text-base text-[#1A1A40] ${spaceMono.className} mt-2`}>Learn more <a href="https://docs.collab.land/help-docs/key-features/token/" className="text-[#8C92AC] hover:underline hover:text-[#1A1A40] transition-colors duration-300" target="_blank" rel="noopener noreferrer">here</a>.</p>
+                    <p className={`text-sm md:text-base text-[#1A1A40] ${spaceMono.className} mt-2`}>Learn more <a href="https://docs.collab.land/help-docs/key-features/token/" className="underline hover:opacity-70 transition-opacity duration-200" target="_blank" rel="noopener noreferrer">here</a>.</p>
                   </CardContent>
                 </Card>
               </div>
